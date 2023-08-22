@@ -1,0 +1,79 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body{
+    background-color:#f0f2f5;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #fff;
+}
+.h-2{
+    display: flex;
+}
+.h-2> input{
+    width: 400px;
+    padding: 5px 10px;
+    border-radius: 5px 0 0 5px;
+    border: 0.2px solid #cacaca;
+}
+.h-2> button{
+    width: 65px;
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+    border: 0.2px solid #cacaca;
+}
+.h-3>i{
+    padding: 5px 10px;
+    color: #707070;
+}
+.h-1 i{
+    padding: 5px 10px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+.reaction{
+    display: flex;
+    justify-content: flex-end; 
+    color: #636363;
+    font-size: 16px;
+}
+.reaction i{
+    padding: 0 7px;
+}
+.reaction span{
+    padding: 0 10px;
+}
+.b-b{
+    border-bottom: 3px solid #636363; 
+}
+.sub-vd{
+    display: flex;
+    margin-bottom: 30px;
+}
+.vd-con>.desc>.title{
+    font-weight: bold;
+    font-size: 20px;
+}
+.sub-vd>.desc{
+    margin-left: 10px;
+}
+.sub-vd>.desc>.title{
+    font-weight: bold;
+}
+p{
+    color: rgb(53, 53, 53);
+}

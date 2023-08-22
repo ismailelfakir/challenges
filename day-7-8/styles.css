@@ -1,0 +1,209 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body{
+    background-color:#000000;
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+}
+.container{
+    padding: 50px 70px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 40px 310px 250px 250px 250px 250px ;
+    grid-gap: 20px;
+}
+.item>.title{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: aqua;
+}
+.item>.desc{
+    font-size: 14px;
+    color: rgb(185, 185, 185);
+}
+.item{
+    overflow: hidden;
+    background-size: cover;
+    padding: 5px;
+    border-radius: 10px;
+}
+.item>div{
+    margin: 10px 0;
+}
+.title-item>span{
+    font-size: 26px;
+    font-weight: 600;
+    
+}
+.title-item>p{
+    font-size: 14px;
+    color: #dddddd;
+    width: 70%;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons>button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1.6px;
+    margin: 0 6px;
+    cursor: pointer;
+}
+.buttons>button:hover{
+    color: #fff;
+    background-color: #00c7c7;
+    border-color: #00c7c7;
+}
+.buttons>:nth-child(1){
+    background-color: aqua;
+    border: 1.5px solid aqua;
+}
+.buttons>:nth-child(2){
+    background: none;
+    border: 1.5px solid aqua;
+    color: aqua;
+}
+.item-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item-1>span{
+    font-size: 26px;
+    letter-spacing: 2.6px;
+    font-weight: 600;
+    border-bottom: 1px solid aqua;
+    border-right: 1px solid aqua;
+    border-radius: 5px;
+}
+.item-1>span::first-letter{
+    color: aqua;
+}
+.item-2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column: span 2;
+}
+.item-4{
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item-5{
+    background-image: url('./nador.jpg');
+}
+.item-6{
+    grid-column: span 2;
+    background-image: url('./roma.jpg');
+}
+
+.item-7{
+    grid-column: span 2;
+    background-image: url('./oualidia.jpg');
+}
+.item-8{
+    grid-row: span 2;
+    background-image: url('./aayoune.jpg');
+}
+.item-9{
+    background-image: url('./beni-mellal.jpg');
+}
+.item-10{
+    background-image: url('./tanger.jpg');
+}
+.item-11{
+    background-image: url('./dakhla.jpg');
+}
+.item-12{
+    grid-column: span 2;
+    background-image: url('./sunset.jpg');
+}
+img{
+    width: 100%;
+}
+.nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.nav li{
+    padding: 3px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    font-weight: 500;
+    color: white;
+}
+.nav li:hover{
+    color: aqua;
+}
+.nav li:nth-child(3){
+    background-color: aqua;
+    border: 1px solid aqua;
+    color: black;
+    border-radius: 10px;
+}
+.nav li:nth-child(4){
+    background-color: none;
+    border: 2px solid aqua;
+    color: aqua;
+    border-radius: 10px;
+}
+#bars{
+    display: none;
+}
+
+@media (max-width: 872px){
+    .container{
+        grid-template-rows: 40px 40px 310px 250px 250px 250px 250px 250px 250px 250px 250px;
+    }
+    .item-2{
+        justify-content: center;
+    }
+    .item{
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+}
+@media (max-width: 550px){
+    .nav{
+        display: block;
+    }
+    .nav li{
+        display: flex;
+        justify-content: center;
+        margin: 10px auto;
+    }
+    .nav li:nth-child(3),.nav li:nth-child(4){
+        background:none;
+        border:none;
+        color: rgb(255, 255, 255);
+    }
+    .container{
+        grid-template-rows: 40px auto 310px 250px 250px 250px 250px 250px 250px 250px 250px;
+    }
+    .buttons{
+        display: block;
+    }
+    .buttons button{
+        width: 100%;
+        margin: 10px auto;
+    }
+}
