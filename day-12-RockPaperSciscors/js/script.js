@@ -11,16 +11,21 @@ function getComputerChoice()
     return choices[randomIndex];
 }
 
-function playRound(playerSelection, computerSelection) {
-        if (computerSelection === playerSelection) {
-            return 1;  // Tie
+function playRound(playerSelection, computerSelection) 
+{
+        if (computerSelection === playerSelection) 
+        {
+            return 1;  // No one wins
         }
-        if ((computerSelection === P && playerSelection === R) || 
-            (computerSelection === S && playerSelection === P)) {
+        else if ((computerSelection === P && playerSelection === R) || 
+            (computerSelection === S && playerSelection === P)||
+            (computerSelection === R && playerSelection === S)
+            ) 
+        {
             return 2;  // Computer wins
         }
-        if ((computerSelection === R && playerSelection === P) || 
-            (computerSelection === P && playerSelection === S)) {
+        else
+        {
             return 3;  // Player wins
         }
 }
