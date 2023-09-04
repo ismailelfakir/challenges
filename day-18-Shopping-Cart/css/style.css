@@ -1,0 +1,157 @@
+
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+}
+.products .product{
+  max-width: 130px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: none;
+  box-shadow: 0px 0.5px 8px #8f8f8f;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+}
+.products .product:hover{
+  transform: scale(1.08);
+}
+.products .product span{
+  margin-bottom: 10px;
+}
+.products .product .name{
+  font-size: 18px;
+  font-weight: 600;
+}
+.products .product .price{
+  font-weight: 500;
+}
+.products .product button{
+  background: green;
+  border: none;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.products .product button:hover{
+  transform: scale(0.9);
+  background: rgb(0, 100, 0);
+}
+.products .product img{
+  width: 90%;
+  height: auto;
+
+}
+.cart {
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 50px;
+}
+.cart-items{
+    margin: 30px auto;
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.item-info {
+    flex: 1;
+    margin: 8px auto;
+}
+
+.item-name {
+    font-weight: 700;
+    margin: 0 20px;
+}
+
+.item-price {
+    color: #4b4b4b;
+    font-weight: 500;
+    margin: 0 20px;
+}
+
+.item-controls {
+    display: flex;
+    align-items: center;
+}
+.item-controls div{
+  margin: auto 22px;
+}
+.heart button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  transition: all 0.2s ease-in;
+}
+.delete button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #b82121;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+}
+.delete button:hover, .heart button:hover {
+  transform: scale(1.16);
+}
+.quantity-button {
+    font-size: 1rem;
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.quantity {
+    margin: 0 10px;
+}
+
+.like-button {
+    background-color: #ff88aa;
+}
+
+.custom-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .custom-input {
+    width: 50px;
+    text-align: center;
+  }
+
+  .heart-button-liked {
+    color: #ff0000; /* Change to the color you want for liked items */
+}
+.total-price{
+  font-weight: 600;
+  font-size: 20px;
+}

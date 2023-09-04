@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping Cart</title>
+        <!------------ include style css files -->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    </head>
+    <body>
+
+          <div class="cart">
+            <div class="cart-header">
+                <h2>Shopping Cart</h2>
+                <div class="products">
+                    <div class="product">
+                        <img src="./img/tshirt.png" alt="tshirt">
+                        <span class="name">T-shirt</span>
+                        <span class="price">99 DH</span>
+                        <button onclick="cart.addProduct('T-shirt', 99)">
+                            Add to cart
+                        </button>
+                    </div>
+                    <div class="product">
+                        <img src="./img/macpro.png" alt="mac">
+                        <span class="name">Macbook pro</span>
+                        <span class="price">17799.99 DH</span>
+                        <button onclick="cart.addProduct('Macbook Pro', 999.99)">
+                            Add to cart
+                        </button>
+                    </div>
+                    <div class="product">
+                        <img src="./img/iphone.png" alt="iphone">
+                        <span class="name">Iphone 14</span>
+                        <span class="price">1499.99 DH</span>
+                        <button onclick="cart.addProduct('Iphone 14', 499.99)">
+                            Add to cart
+                        </button>
+                    </div>
+                    <div class="product">
+                        <img src="./img/watch.png" alt="watch">
+                        <span class="name">Watch</span>
+                        <span class="price">120 DH</span>
+                        <button onclick="cart.addProduct('Watch', 120)">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-items">
+                
+            </div>
+            <div class="total-price">
+                Total: 0.00 DH 
+            </div>
+        </div>
+    
+          
+        <script type="text/javascript " src="./js/index.js"></script>
+
+    </body>
+
+    </html>
