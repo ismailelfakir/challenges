@@ -69,8 +69,9 @@
 //   console.log(`The sum of positive numbers in the list is: ${positiveSum}`);
 // }
 
-//------------------------- ex 10 --------------------------
+// //------------------------- ex 10 --------------------------
 
+// // function traitement
 // function countOccurrences(arr, target) 
 // {
 //   let count = 0;
@@ -83,17 +84,21 @@
 //   }
 //   return count;
 // }
+//  // input the table of numbers
+// const numbers = [2,4,6,8,3,7,9,10,12,15];
 
-// const numbers = [];
+// // for (let i = 1; i <= 10; i++) 
+// // {
+// //   const n = parseInt(prompt(`Enter the ${i} number :`));
+// //   numbers.push(n);
+// // }
 
-// for (let i = 1; i <= 10; i++) 
-// {
-//   const n = parseInt(prompt(`Enter the ${i} number :`));
-//   numbers.push(n);
-// }
-
+// do{
+//   //input the target number
 // const target = parseInt(prompt("Enter the element to search for:"));
+// }while(isNaN(target));
 
+// //check the target if not null
 // if (!isNaN(target)) 
 // {
 //   const occurrences = countOccurrences(numbers, target);

@@ -78,7 +78,9 @@
 // const i = array1.indexOf(max);
 // if (i > -1) 
 // { 
-//   array1.splice(i, 1); 
+//   for (let j = 0; j < array1.length; j++){
+//     array1.splice(i, 1); 
+//   }
 // }
 // console.log("array1 after: "+array1);
 // let greterMax = Math.max.apply(null, array1);
