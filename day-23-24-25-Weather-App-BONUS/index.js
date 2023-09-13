@@ -55,8 +55,6 @@ citySelect.addEventListener('change', () => {
 });
 
 async function fetchWeatherData(cityName) {
-  // console.log('Selected country:', selectedCountry);
-  // console.log('Cities in selected country:', citiesByCountry[selectedCountry]);
 
   const citiesInSelectedCountry = citiesByCountry[selectedCountry];
 
@@ -84,12 +82,19 @@ async function fetchWeatherData(cityName) {
     const hourlyTemperaturesList = document.getElementById('hourlyTemperatures');
     hourlyTemperaturesList.innerHTML = '';
 
-
     hourlyTimes.forEach((time, index) => {
       const hour = new Date(time).getHours();
       const listItem = document.createElement('li');
       listItem.textContent = `${hour}:00 - ${hourlyTemperatures[index]}°C`;
       hourlyTemperaturesList.appendChild(listItem);
+
+      if (hour === new Date().getHours()) {
+        listItem.classList.add('currentHour'); // Add a class to the list item
+      }
+      // if(hour<=20 && hour>6 ){
+      //   document.body.classList.add("day");
+      // }
+      
     });
   } catch (error) 
   {
