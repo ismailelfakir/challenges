@@ -20,7 +20,7 @@ class ContactList
   
     searchContact(searchName) 
     {
-      const foundContacts = this.contacts.find((contact) => contact.name === searchName);
+      const foundContacts = this.contacts.filter((contact) => contact.name === searchName);
       if (foundContacts) 
       {
         console.log(`Your searching result:\n`);

@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+app.set('template engine','ejs');
 
 // Logging Middleware to all routes 
 app.use((req, res, next) => {
